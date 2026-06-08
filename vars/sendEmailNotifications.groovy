@@ -20,7 +20,7 @@ def call(String buildStatus, String recipients) {
                             <p><strong>Job:</strong> ${env.JOB_NAME}</p>
                             <p><strong>Build Number:</strong> #${env.BUILD_NUMBER}</p>
                             <p><strong>Status:</strong> <span class="${buildStatus == 'SUCCESS' ? 'success' : 'failure'}">${buildStatus}</span></p>
-                            <p>Check the full console output <a href="${env.BUILD_URL}">here</a>.</p>
+                            <p>Please check the build logs for more details: <a href="${env.BUILD_URL}">here</a>.</p>
                         </div>
                     </body>
                     </html>'''
